@@ -1,0 +1,71 @@
+body {
+    background-image : url("nightsky.jpg");
+}
+
+.contents {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    text-align: center;
+}
+
+h1 {
+    color : #FFE495;
+    margin-bottom : 3rem;
+}
+
+.clock {
+    width : 22.5rem;
+    height : 22.5rem;
+    background-image: url("moon.PNG");
+    background-size: 105% 105%;
+    background-position: center;
+    border : 0.3rem solid black;
+    border-radius: 50%;
+}
+
+.clock_hand {
+    width : 11.7rem;
+    height : 0.2rem;
+    background : black;
+    position : absolute;
+    top : 40%;
+    left : 50%;
+    transform-origin : left;
+}
+
+.timer_settings {
+    margin : 3rem;
+    color : #FFE495;
+    font-size: 30px;
+}
+
+.timer_settings > * {
+    margin-left : 2.5rem;
+    margin-right : 2.5rem;
+}
+
+span[class*="us_button"] > button { 
+    /*className 말고 class 써야 하나봄*/
+    color : white;
+    font-size : 20px;
+    width: 3rem;
+    height : 3rem;
+    border-radius : 25%;
+    border-color : white;
+    background : none;
+    margin-right : 0.5rem;
+    margin-left : 0.5rem;
+}
+
+.reset_button, .start_button {
+    color : white;
+    font-size : 30px;
+    width: 7rem;
+    height : 4rem;
+    border-color : white;
+    background : none;
+    margin-right : 2rem;
+    margin-left : 2rem;
+}
